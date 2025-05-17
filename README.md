@@ -1,7 +1,6 @@
 # EliteFit
 
 <div align="center">
-  <img src="https://via.placeholder.com/200x200" alt="EliteFit Logo" width="200"/>
   <h3>AI-Powered Fashion E-Commerce Platform</h3>
   <p>Revolutionizing online shopping with smart sizing and personalized recommendations</p>
 </div>
@@ -93,29 +92,14 @@ Our platform not only addresses sizing issues but also provides personalized out
 ### Integration & Deployment
 - **PayPal API**: Payment processing integration
 - **AI Size Recommendation Engine**: Custom-built sizing algorithm
-- **Docker**: Containerization for consistent deployment
-- **AWS/Heroku**: Hosting and deployment platforms
 
 ## 📊 Project Status
 
 Current Status: **In Development**
 
-EliteFit is currently in active development with an expected launch in [Expected Launch Date]. 
 
 Project tracking is managed through [our Trello board](https://trello.com/b/UkXEI35Z/elitefit).
 
-## 📸 Screenshots
-
-<div align="center">
-  <img src="https://via.placeholder.com/400x200" alt="Homepage Screenshot" width="400"/>
-  <p>Homepage Design</p>
-  
-  <img src="https://via.placeholder.com/400x200" alt="Product Page Screenshot" width="400"/>
-  <p>Product Page with Smart Sizing</p>
-  
-  <img src="https://via.placeholder.com/400x200" alt="Recommendation Engine Screenshot" width="400"/>
-  <p>Personalized Recommendations Interface</p>
-</div>
 
 View our complete design in [Figma](https://www.figma.com/design/55KZncNzTu1xf5Hy4gmtGb/Elitefit?node-id=0-1&p=f&t=osGJUpJr1D7vpUzX-0).
 
@@ -132,175 +116,25 @@ View our complete design in [Figma](https://www.figma.com/design/55KZncNzTu1xf5H
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/elitefit.git
-cd elitefit/backend
+cd server
 
 # Install dependencies
 npm install
 
-# Configure environment variables
-cp .env.example .env
-# Edit .env file with your database credentials and other configurations
 
-# Setup database
-npm run db:setup
-
-# Start the development server
-npm run dev
-```
 
 ### Frontend Setup
 
 ```bash
 # Navigate to the frontend directory
-cd ../frontend
+cd client
 
 # Install dependencies
 npm install
 
 # Start the development server
-npm start
-```
+npm run dev
 
-### Database Setup
-
-```bash
-# Create PostgreSQL database
-createdb elitefit
-
-# Run migrations
-npm run migrate
-
-# Seed initial data (optional)
-npm run seed
-```
-
-## 📝 API Documentation
-
-EliteFit API provides endpoints for user management, product catalog, shopping cart, orders, and AI sizing recommendations.
-
-### Base URL
-
-```
-Development: http://localhost:5000/api
-Production: https://api.elitefit.com
-```
-
-### Key Endpoints
-
-- **Authentication**
-  - `POST /auth/register` - Register a new user
-  - `POST /auth/login` - User login
-
-- **User Management**
-  - `GET /users/profile` - Get user profile
-  - `PUT /users/profile` - Update user profile
-  - `POST /users/measurements` - Add/update user measurements
-
-- **Products**
-  - `GET /products` - List all products
-  - `GET /products/:id` - Get product details
-  - `GET /products/recommendations` - Get personalized recommendations
-
-- **Shopping**
-  - `GET /cart` - View shopping cart
-  - `POST /cart` - Add item to cart
-  - `DELETE /cart/:itemId` - Remove item from cart
-  - `POST /orders` - Create a new order
-  - `GET /orders/:id` - Get order details
-
-### Authentication
-
-API requests requiring authentication should include the JWT token in the Authorization header:
-
-```
-Authorization: Bearer [token]
-```
-
-## 💻 Usage
-
-### Smart Sizing Feature
-
-1. Create an account or login
-2. Navigate to "My Measurements" section
-3. Input your measurements or use the camera feature
-4. Browse products to see your recommended size for each item
-
-### Personalized Recommendations
-
-1. Complete your style profile in account settings
-2. Browse your personalized recommendations on the homepage or recommendations page
-3. Rate recommended items to improve future suggestions
-
-## 🗺️ Development Roadmap
-
-### Phase 1: MVP (Current)
-- Core e-commerce functionality
-- Basic user authentication
-- Product catalog and cart system
-- Initial version of sizing algorithm
-
-### Phase 2: Enhanced Features
-- AI-powered size recommendations
-- Personalized outfit suggestions
-- Social sharing features
-- User reviews and ratings
-
-### Phase 3: Advanced Features
-- AR try-on capability
-- Style matching with similar users
-- Subscription service for frequent shoppers
-- Mobile application
-
-## 📁 Project Structure
-
-```
-elitefit/
-├── frontend/               # React frontend
-│   ├── public/             # Static files
-│   ├── src/                # Source files
-│   │   ├── assets/         # Images, fonts, etc.
-│   │   ├── components/     # React components
-│   │   ├── pages/          # Page components
-│   │   ├── redux/          # Redux store setup
-│   │   ├── services/       # API services
-│   │   ├── styles/         # Global styles
-│   │   └── utils/          # Utility functions
-│   └── package.json        # Frontend dependencies
-│
-├── backend/                # Node.js backend
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
-│   ├── middleware/         # Custom middleware
-│   ├── models/             # Database models
-│   ├── routes/             # API routes
-│   ├── services/           # Business logic
-│   ├── utils/              # Utility functions
-│   └── package.json        # Backend dependencies
-│
-├── docs/                   # Documentation
-├── scripts/                # Utility scripts
-└── README.md               # Project README
-```
-
-## 🤝 Contributing
-
-We welcome contributions to EliteFit! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Contact
-
-Project Link: [https://github.com/yourusername/elitefit](https://github.com/yourusername/elitefit)
 
 For questions or support, please contact us at [your-email@example.com](mailto:your-email@example.com).
 
