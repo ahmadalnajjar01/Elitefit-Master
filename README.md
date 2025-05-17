@@ -103,6 +103,14 @@ Project tracking is managed through [our Trello board](https://trello.com/b/UkXE
 
 View our complete design in [Figma](https://www.figma.com/design/55KZncNzTu1xf5Hy4gmtGb/Elitefit?node-id=0-1&p=f&t=osGJUpJr1D7vpUzX-0).
 
+
+## 🎞️ Presentation
+
+Check out our EliteFit presentation on Canva:
+
+[![View Presentation](https://img.shields.io/badge/View%20Presentation-Canva-blue?logo=canva&style=for-the-badge)](https://www.canva.com/design/DAGlRorzBWI/EgCUHkBtwkRSFlgd3VBFwQ/edit)
+
+
 ## 🚀 Installation & Setup
 
 ### Prerequisites
@@ -136,10 +144,3 @@ npm install
 npm run dev
 
 
-For questions or support, please contact us at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-<div align="center">
-  <p>Made with ❤️ by the EliteFit Team</p>
-</div>
